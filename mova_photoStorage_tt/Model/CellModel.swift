@@ -11,4 +11,7 @@ import Foundation
 
 class CellModel {
     
+//    var data = Data()
+//    
+//    
 }

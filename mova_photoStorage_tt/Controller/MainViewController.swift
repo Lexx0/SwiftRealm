@@ -34,6 +34,10 @@ class MainViewController: UIViewController {
         self.tableView.delegate = self
     }
     
+    func addImage() {
+        print("ТЫЦ! 11")
+    }
+    
 }
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
@@ -64,9 +68,19 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell0", for: indexPath)
         let section = indexPath.section
         let row = indexPath.row
+        let cellData = self.cellsArray[section][indexPath.row]
         
         if (section == 0) {
             
+            if cellData != nil {
+                
+            } else {
+                
+                let button = UIButton(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
+                button.addTarget(self, action: #selector(MainViewController.addImage), for: .touchUpInside)
+                
+                cell.addSubview(button)
+            }
             
         } else if (section == 1) {
             
