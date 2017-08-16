@@ -7,11 +7,11 @@
 //
 
 import Foundation
+import RealmSwift
 
 
-class CellModel {
+class CellModel: Object {
     
 //    var data = Data()
-//    
-//    
+
 }
