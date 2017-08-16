@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6794A1F4321F60066D88C /* AppDelegate.swift */; };
-		79C6794D1F4321F60066D88C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6794C1F4321F60066D88C /* ViewController.swift */; };
 		79C679501F4321F70066D88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C6794E1F4321F70066D88C /* Main.storyboard */; };
 		79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79C679511F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld */; };
 		79C679551F4321F70066D88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C679541F4321F70066D88C /* Assets.xcassets */; };
 		79C679581F4321F70066D88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C679561F4321F70066D88C /* LaunchScreen.storyboard */; };
+		79C679631F4322750066D88C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679621F4322750066D88C /* MainViewController.swift */; };
+		79C679651F4322D70066D88C /* Cell0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679641F4322D70066D88C /* Cell0.swift */; };
+		79C679671F4473D60066D88C /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679661F4473D60066D88C /* CellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79C679471F4321F60066D88C /* mova_photoStorage_tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mova_photoStorage_tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C6794A1F4321F60066D88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79C6794C1F4321F60066D88C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		79C6794F1F4321F70066D88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79C679521F4321F70066D88C /* mova_photoStorage_tt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mova_photoStorage_tt.xcdatamodel; sourceTree = "<group>"; };
 		79C679541F4321F70066D88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C679571F4321F70066D88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C679591F4321F70066D88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C679621F4322750066D88C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Controller/MainViewController.swift; sourceTree = "<group>"; };
+		79C679641F4322D70066D88C /* Cell0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell0.swift; path = View/Cell0.swift; sourceTree = "<group>"; };
+		79C679661F4473D60066D88C /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellModel.swift; path = Model/CellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		79C679491F4321F60066D88C /* mova_photoStorage_tt */ = {
 			isa = PBXGroup;
 			children = (
+				79C679611F43221B0066D88C /* Model */,
+				79C679601F4322130066D88C /* View */,
+				79C6795F1F43220A0066D88C /* Controller */,
 				79C6794A1F4321F60066D88C /* AppDelegate.swift */,
-				79C6794C1F4321F60066D88C /* ViewController.swift */,
 				79C6794E1F4321F70066D88C /* Main.storyboard */,
 				79C679541F4321F70066D88C /* Assets.xcassets */,
 				79C679561F4321F70066D88C /* LaunchScreen.storyboard */,
@@ -65,6 +71,30 @@
 				79C679511F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld */,
 			);
 			path = mova_photoStorage_tt;
+			sourceTree = "<group>";
+		};
+		79C6795F1F43220A0066D88C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79C679621F4322750066D88C /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		79C679601F4322130066D88C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79C679641F4322D70066D88C /* Cell0.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		79C679611F43221B0066D88C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79C679661F4473D60066D88C /* CellModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C679631F4322750066D88C /* MainViewController.swift in Sources */,
 				79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */,
-				79C6794D1F4321F60066D88C /* ViewController.swift in Sources */,
+				79C679651F4322D70066D88C /* Cell0.swift in Sources */,
+				79C679671F4473D60066D88C /* CellModel.swift in Sources */,
 				79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
