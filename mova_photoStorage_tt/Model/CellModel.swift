@@ -12,6 +12,6 @@ import RealmSwift
 
 class CellModel: Object {
     
-//    var data = Data()
+    dynamic var picData: NSData?
 
 }

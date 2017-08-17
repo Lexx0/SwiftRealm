@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import RealmSwift 
+import RealmSwift 
 
 class MainViewController: UIViewController {
     
@@ -22,23 +22,37 @@ class MainViewController: UIViewController {
         
         initialSetup()
 
-        // Do any additional setup after loading the view.
     }
 
+    
+    
+    
+    
+    
+    
     func initialSetup() {
         
-//        self.tableSwitch.setTitle("User ID Photos", forSegmentAt: 0)
-//        self.tableSwitch.setTitle("Certificate Photos", forSegmentAt: 1)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+//        self.cellsArray[0].append(<#T##newElement: Element##Element#>)
     }
+    
     
     func addImage() {
         print("ТЫЦ! 11")
     }
     
 }
+
+
+
+
+
+
+
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -65,14 +79,14 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell0", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let section = indexPath.section
         let row = indexPath.row
         let cellData = self.cellsArray[section][indexPath.row]
         
         if (section == 0) {
             
-            if cellData != nil {
+            if cellData.picData != nil {
                 
             } else {
                 
