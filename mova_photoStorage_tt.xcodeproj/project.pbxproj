@@ -25,6 +25,10 @@
 		79C679801F4578EA0066D88C /* ChooseFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */; };
 		79C679811F4578EA0066D88C /* ChooseFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */; };
 		79C679831F457EDE0066D88C /* FileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679821F457EDE0066D88C /* FileState.swift */; };
+		79C679861F45831E0066D88C /* PublicVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679851F45831E0066D88C /* PublicVars.swift */; };
+		79C679891F4589730066D88C /* NIB+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679881F4589730066D88C /* NIB+Extension.swift */; };
+		79C6798D1F458CFB0066D88C /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6798C1F458CFB0066D88C /* TableView+Extension.swift */; };
+		79C679911F4590130066D88C /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679901F4590130066D88C /* Array+Extension.swift */; };
 		AD831DEAA4D8BFFF5C779D3D /* Pods_mova_photoStorage_tt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFD194C8E8C96E936DB90D4 /* Pods_mova_photoStorage_tt.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,10 @@
 		79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseFileCell.swift; path = View/ChooseFileCell.swift; sourceTree = "<group>"; };
 		79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseFileCell.xib; path = View/ChooseFileCell.xib; sourceTree = "<group>"; };
 		79C679821F457EDE0066D88C /* FileState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileState.swift; path = Model/FileState.swift; sourceTree = "<group>"; };
+		79C679851F45831E0066D88C /* PublicVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublicVars.swift; path = Utils/PublicVars.swift; sourceTree = "<group>"; };
+		79C679881F4589730066D88C /* NIB+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NIB+Extension.swift"; path = "Extensions/NIB+Extension.swift"; sourceTree = "<group>"; };
+		79C6798C1F458CFB0066D88C /* TableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TableView+Extension.swift"; path = "Extensions/TableView+Extension.swift"; sourceTree = "<group>"; };
+		79C679901F4590130066D88C /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Extensions/Array+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 		79C679491F4321F60066D88C /* mova_photoStorage_tt */ = {
 			isa = PBXGroup;
 			children = (
+				79C679841F4582EE0066D88C /* Utils */,
 				79C679611F43221B0066D88C /* Model */,
 				79C679601F4322130066D88C /* View */,
 				79C6795F1F43220A0066D88C /* Controller */,
@@ -153,6 +162,25 @@
 				79C679821F457EDE0066D88C /* FileState.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		79C679841F4582EE0066D88C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				79C679871F45894F0066D88C /* Extensions */,
+				79C679851F45831E0066D88C /* PublicVars.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		79C679871F45894F0066D88C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79C679881F4589730066D88C /* NIB+Extension.swift */,
+				79C6798C1F458CFB0066D88C /* TableView+Extension.swift */,
+				79C679901F4590130066D88C /* Array+Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		C5F36ECB72FE5D706874956F /* Pods */ = {
@@ -303,14 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C679861F45831E0066D88C /* PublicVars.swift in Sources */,
 				79C679801F4578EA0066D88C /* ChooseFileCell.swift in Sources */,
 				79C679631F4322750066D88C /* MainViewController.swift in Sources */,
 				79C6797A1F4574350066D88C /* ChooseFileVC.swift in Sources */,
 				79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */,
 				79C6797D1F4575EB0066D88C /* CheckBox.swift in Sources */,
 				79C679831F457EDE0066D88C /* FileState.swift in Sources */,
+				79C6798D1F458CFB0066D88C /* TableView+Extension.swift in Sources */,
 				79C679651F4322D70066D88C /* Cell0.swift in Sources */,
 				79C679671F4473D60066D88C /* CellModel.swift in Sources */,
+				79C679911F4590130066D88C /* Array+Extension.swift in Sources */,
+				79C679891F4589730066D88C /* NIB+Extension.swift in Sources */,
 				79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

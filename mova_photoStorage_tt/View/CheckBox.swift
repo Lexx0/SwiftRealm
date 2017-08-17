@@ -6,10 +6,9 @@
 //  Copyright © 2017 PatataMatata. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CheckBox: UIButton {
-    
 
     let checkedImage = UIImage(named: "checked-circle")! as UIImage
     let uncheckedImage = UIImage(named: "empty-circle")! as UIImage

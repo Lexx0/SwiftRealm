@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import RealmSwift
-import Alamofire
+//import RealmSwift
+//import Alamofire
 
 class MainViewController: UIViewController {
     
@@ -33,7 +33,8 @@ class MainViewController: UIViewController {
     
     func initialSetup() {
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.registerCell(withClass: UITableViewCell.self)
+//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -43,7 +44,10 @@ class MainViewController: UIViewController {
     
     
     func addImage() {
-        print("ТЫЦ! 11")
+
+        let chooseFileVC = UINib.controller(controller: ChooseFileVC.self)!
+//        chooseFileVC.states =
+        self.present(chooseFileVC, animated: true, completion: nil)
     }
     
 }

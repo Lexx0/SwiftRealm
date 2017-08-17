@@ -9,6 +9,8 @@
 import UIKit
 
 class ChooseFileCell: UITableViewCell {
+    
+    var checkBoxBlock: ((_ sender: CheckBox) -> ())?
 
     @IBOutlet weak var fileNameLbl: UILabel!
     @IBOutlet weak var checkBox: CheckBox!
@@ -21,6 +23,11 @@ class ChooseFileCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    public func fillWithState(_ state: FileState) {
+        self.fileNameLbl.text = state.fileName
+        self.checkBox.isChecked = state.isSelected
     }
     
 }
