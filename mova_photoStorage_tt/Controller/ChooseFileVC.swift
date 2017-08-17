@@ -12,11 +12,13 @@ class ChooseFileVC: UIViewController {
     @IBOutlet weak var tablewView: UITableView!
     @IBOutlet weak var okBtn: UIButton!
     
-    var states: [FileState]? {
-        didSet {
-            states.map({ _ in self.tablewView.reloadData() })
-        }
-    }
+//    var states: [FileState]? {
+//        didSet {
+//            states.map({ _ in self.tablewView.reloadData() })
+//        }
+//    }
+    
+    var states: [FileState]?
 
     override func viewDidLoad() {
         super.viewDidLoad()

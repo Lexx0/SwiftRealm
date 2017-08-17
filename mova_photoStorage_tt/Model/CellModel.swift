@@ -8,10 +8,13 @@
 
 import Foundation
 import RealmSwift
+//import ObjectMapper
 
 
 class CellModel: Object {
     
+    dynamic var fileName: String?
+    dynamic var isSelected = false
     dynamic var picData: NSData?
 
 }

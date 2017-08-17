@@ -93,6 +93,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             
             if cellData.picData != nil {
                 
+                let pictureImgV = UIImageView(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
+                pictureImgV.image = UIImage(data: cellData.picData)
+                
+                
             } else {
                 
                 let button = UIButton(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
@@ -103,7 +107,19 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
             
         } else if (section == 1) {
             
-            
+            if cellData.picData != nil {
+                
+                let pictureImgV = UIImageView(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
+                pictureImgV.image = UIImage(data: cellData.picData)
+                
+                
+            } else {
+                
+                let button = UIButton(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
+                button.addTarget(self, action: #selector(MainViewController.addImage), for: .touchUpInside)
+                
+                cell.addSubview(button)
+            }
         }
         
         return cell
