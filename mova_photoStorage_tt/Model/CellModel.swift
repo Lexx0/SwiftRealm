@@ -7,14 +7,21 @@
 //
 
 import Foundation
-import RealmSwift
+//import RealmSwift
 //import ObjectMapper
 
 
-class CellModel: Object {
+public class CellModel {
     
-    dynamic var fileName: String?
+    dynamic var fileName: String!
     dynamic var isSelected = false
-    dynamic var picData: NSData?
+    dynamic var picData: Data!
+    
+    init(fileName: String, isSelected: Bool, picData: Data) {
+        
+        self.fileName = fileName
+        self.isSelected = isSelected
+        self.picData = picData
+    }
 
 }

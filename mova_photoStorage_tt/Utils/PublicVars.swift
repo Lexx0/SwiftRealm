@@ -11,3 +11,9 @@ import Foundation
 public var fileToChoseCheckedBox = IndexPath()
 public var chosenFileName = ""
 public var fileURL = URL(string: "")
+
+public var avatarList = ["Chartreux", "FatCat", "Human", "Octopus", "RedCat", "Singapura", "Turkish_Van"]
+
+public var cellsArray = [[CellModel](), [CellModel]()]
+
+

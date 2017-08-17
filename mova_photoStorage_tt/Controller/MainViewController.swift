@@ -12,7 +12,6 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    var cellsArray = [[CellModel](), [CellModel]()]
     let categoryList: [String] = ["User ID Photos", "Certificate Photos"]
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,6 +21,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         initialSetup()
+        
+        createDataArray()
 
     }
 
@@ -48,6 +49,21 @@ class MainViewController: UIViewController {
         let chooseFileVC = UINib.controller(controller: ChooseFileVC.self)!
 //        chooseFileVC.states =
         self.present(chooseFileVC, animated: true, completion: nil)
+    }
+    
+    func createDataArray() {
+        
+        cellsArray[0].removeAll()
+        cellsArray[1].removeAll()
+        
+        for i in avatarList {
+            
+            let pngImage = UIImage(named: i)
+            
+            let imageData: Data = UIImagePNGRepresentation(pngImage!)!
+            
+            cellsArray[0].append(CellModel.init(fileName: i, isSelected: false, picData: imageData))
+        }
     }
     
 }
@@ -87,7 +103,7 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let section = indexPath.section
         let row = indexPath.row
-        let cellData = self.cellsArray[section][indexPath.row]
+        let cellData = cellsArray[section][indexPath.row]
         
         if (section == 0) {
             
@@ -95,6 +111,9 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
                 
                 let pictureImgV = UIImageView(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
                 pictureImgV.image = UIImage(data: cellData.picData)
+                
+                let nameLbl = UILabel(frame: CGRect(x: 60, y: 8, width: 70, height: 44))
+                nameLbl.text = cellData.fileName
                 
                 
             } else {
@@ -112,6 +131,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
                 let pictureImgV = UIImageView(frame: CGRect(x: 8, y: 8, width: 44, height: 44))
                 pictureImgV.image = UIImage(data: cellData.picData)
                 
+                let nameLbl = UILabel(frame: CGRect(x: 60, y: 8, width: 70, height: 44))
+                nameLbl.text = cellData.fileName
                 
             } else {
                 
