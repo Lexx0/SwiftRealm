@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-mova_photoStorage_tt.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>49257EAC287AAB645833232AFBBF4EC1</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C646B58C990331E05C8F32700953D45F</key>
+		<key>B336189DFABDC422DF06D5F83F0E6323</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDC0588087F35DE81801CEBF71B794D4</key>
+		<key>C7A7AFDC34AEC00C05C6CFADFAA99B72</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCEA017353708525018E7F2A61A620E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

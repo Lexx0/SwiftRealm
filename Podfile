@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'mova_photoStorage_tt' do
   pod 'RealmSwift'
-  pod 'AlamoFire'
+  pod 'Alamofire'
 end
 
 

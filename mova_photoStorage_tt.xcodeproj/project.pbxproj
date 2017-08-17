@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6441062AB2E8B89C56760C68 /* Pods_mova_photoStorage_tt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E049BA7A7D16C08A0031121 /* Pods_mova_photoStorage_tt.framework */; };
 		79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6794A1F4321F60066D88C /* AppDelegate.swift */; };
 		79C679501F4321F70066D88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C6794E1F4321F70066D88C /* Main.storyboard */; };
 		79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79C679511F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld */; };
@@ -19,6 +20,11 @@
 		79C679741F44D24D0066D88C /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79C679681F44A4190066D88C /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79C679751F44D24D0066D88C /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C679691F44A4190066D88C /* RealmSwift.framework */; };
 		79C679761F44D24D0066D88C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79C679691F44A4190066D88C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79C6797A1F4574350066D88C /* ChooseFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679781F4574340066D88C /* ChooseFileVC.swift */; };
+		79C6797B1F4574350066D88C /* ChooseFileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C679791F4574340066D88C /* ChooseFileVC.xib */; };
+		79C6797D1F4575EB0066D88C /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6797C1F4575EB0066D88C /* CheckBox.swift */; };
+		79C679801F4578EA0066D88C /* ChooseFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */; };
+		79C679811F4578EA0066D88C /* ChooseFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +57,11 @@
 		79C679661F4473D60066D88C /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellModel.swift; path = Model/CellModel.swift; sourceTree = "<group>"; };
 		79C679681F44A4190066D88C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
 		79C679691F44A4190066D88C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		79C679781F4574340066D88C /* ChooseFileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseFileVC.swift; path = Controller/ChooseFileVC.swift; sourceTree = "<group>"; };
+		79C679791F4574340066D88C /* ChooseFileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseFileVC.xib; path = Controller/ChooseFileVC.xib; sourceTree = "<group>"; };
+		79C6797C1F4575EB0066D88C /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBox.swift; path = View/CheckBox.swift; sourceTree = "<group>"; };
+		79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseFileCell.swift; path = View/ChooseFileCell.swift; sourceTree = "<group>"; };
+		79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseFileCell.xib; path = View/ChooseFileCell.xib; sourceTree = "<group>"; };
 		FF00132EEA996FF860AC056F /* Pods-mova_photoStorage_tt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mova_photoStorage_tt.release.xcconfig"; path = "Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +72,7 @@
 			files = (
 				79C679751F44D24D0066D88C /* RealmSwift.framework in Frameworks */,
 				79C679731F44D24D0066D88C /* Realm.framework in Frameworks */,
+				6441062AB2E8B89C56760C68 /* Pods_mova_photoStorage_tt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				79C679621F4322750066D88C /* MainViewController.swift */,
+				79C679781F4574340066D88C /* ChooseFileVC.swift */,
+				79C679791F4574340066D88C /* ChooseFileVC.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -123,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				79C679641F4322D70066D88C /* Cell0.swift */,
+				79C6797C1F4575EB0066D88C /* CheckBox.swift */,
+				79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */,
+				79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -211,6 +228,8 @@
 				79C679581F4321F70066D88C /* LaunchScreen.storyboard in Resources */,
 				79C679551F4321F70066D88C /* Assets.xcassets in Resources */,
 				79C679501F4321F70066D88C /* Main.storyboard in Resources */,
+				79C679811F4578EA0066D88C /* ChooseFileCell.xib in Resources */,
+				79C6797B1F4574350066D88C /* ChooseFileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,11 +276,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
@@ -277,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C679801F4578EA0066D88C /* ChooseFileCell.swift in Sources */,
 				79C679631F4322750066D88C /* MainViewController.swift in Sources */,
+				79C6797A1F4574350066D88C /* ChooseFileVC.swift in Sources */,
 				79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */,
+				79C6797D1F4575EB0066D88C /* CheckBox.swift in Sources */,
 				79C679651F4322D70066D88C /* Cell0.swift in Sources */,
 				79C679671F4473D60066D88C /* CellModel.swift in Sources */,
 				79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */,
