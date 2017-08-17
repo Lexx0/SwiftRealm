@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-mova_photoStorage_tt.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,17 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B336189DFABDC422DF06D5F83F0E6323</key>
+		<key>A7092E8B5FB6319973C68DEA003AACEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7A7AFDC34AEC00C05C6CFADFAA99B72</key>
+		<key>C001CE74AC9A5A86E46C51FAFBD50E3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCEA017353708525018E7F2A61A620E5</key>
+		<key>CD6C9FB6B052E1CF663F8A56041EA163</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5F9CEE6EFE5D669043EA6A158289DE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

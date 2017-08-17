@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6441062AB2E8B89C56760C68 /* Pods_mova_photoStorage_tt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E049BA7A7D16C08A0031121 /* Pods_mova_photoStorage_tt.framework */; };
 		79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6794A1F4321F60066D88C /* AppDelegate.swift */; };
 		79C679501F4321F70066D88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C6794E1F4321F70066D88C /* Main.storyboard */; };
 		79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79C679511F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld */; };
@@ -25,6 +24,8 @@
 		79C6797D1F4575EB0066D88C /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6797C1F4575EB0066D88C /* CheckBox.swift */; };
 		79C679801F4578EA0066D88C /* ChooseFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */; };
 		79C679811F4578EA0066D88C /* ChooseFileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */; };
+		79C679831F457EDE0066D88C /* FileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C679821F457EDE0066D88C /* FileState.swift */; };
+		AD831DEAA4D8BFFF5C779D3D /* Pods_mova_photoStorage_tt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CFD194C8E8C96E936DB90D4 /* Pods_mova_photoStorage_tt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,8 +44,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		173030AD265BDDC893E2413F /* Pods-mova_photoStorage_tt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mova_photoStorage_tt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt.debug.xcconfig"; sourceTree = "<group>"; };
-		4E049BA7A7D16C08A0031121 /* Pods_mova_photoStorage_tt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mova_photoStorage_tt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		060D4BCDE083B15EA6115B87 /* Pods-mova_photoStorage_tt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mova_photoStorage_tt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt.debug.xcconfig"; sourceTree = "<group>"; };
+		6CFD194C8E8C96E936DB90D4 /* Pods_mova_photoStorage_tt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mova_photoStorage_tt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DAB5271523FB11981C6D4B /* Pods-mova_photoStorage_tt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mova_photoStorage_tt.release.xcconfig"; path = "Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt.release.xcconfig"; sourceTree = "<group>"; };
 		79C679471F4321F60066D88C /* mova_photoStorage_tt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mova_photoStorage_tt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C6794A1F4321F60066D88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C6794F1F4321F70066D88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 		79C6797C1F4575EB0066D88C /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBox.swift; path = View/CheckBox.swift; sourceTree = "<group>"; };
 		79C6797E1F4578EA0066D88C /* ChooseFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChooseFileCell.swift; path = View/ChooseFileCell.swift; sourceTree = "<group>"; };
 		79C6797F1F4578EA0066D88C /* ChooseFileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChooseFileCell.xib; path = View/ChooseFileCell.xib; sourceTree = "<group>"; };
-		FF00132EEA996FF860AC056F /* Pods-mova_photoStorage_tt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mova_photoStorage_tt.release.xcconfig"; path = "Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt.release.xcconfig"; sourceTree = "<group>"; };
+		79C679821F457EDE0066D88C /* FileState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileState.swift; path = Model/FileState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 			files = (
 				79C679751F44D24D0066D88C /* RealmSwift.framework in Frameworks */,
 				79C679731F44D24D0066D88C /* Realm.framework in Frameworks */,
-				6441062AB2E8B89C56760C68 /* Pods_mova_photoStorage_tt.framework in Frameworks */,
+				AD831DEAA4D8BFFF5C779D3D /* Pods_mova_photoStorage_tt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +86,7 @@
 			children = (
 				79C679681F44A4190066D88C /* Realm.framework */,
 				79C679691F44A4190066D88C /* RealmSwift.framework */,
-				4E049BA7A7D16C08A0031121 /* Pods_mova_photoStorage_tt.framework */,
+				6CFD194C8E8C96E936DB90D4 /* Pods_mova_photoStorage_tt.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,7 +97,7 @@
 				79C679491F4321F60066D88C /* mova_photoStorage_tt */,
 				79C679481F4321F60066D88C /* Products */,
 				5A9BD2335D2F81CC0F8FB1C5 /* Frameworks */,
-				F1F7D61C57DA1B478B6E3BDF /* Pods */,
+				C5F36ECB72FE5D706874956F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,15 +150,16 @@
 			isa = PBXGroup;
 			children = (
 				79C679661F4473D60066D88C /* CellModel.swift */,
+				79C679821F457EDE0066D88C /* FileState.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		F1F7D61C57DA1B478B6E3BDF /* Pods */ = {
+		C5F36ECB72FE5D706874956F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				173030AD265BDDC893E2413F /* Pods-mova_photoStorage_tt.debug.xcconfig */,
-				FF00132EEA996FF860AC056F /* Pods-mova_photoStorage_tt.release.xcconfig */,
+				060D4BCDE083B15EA6115B87 /* Pods-mova_photoStorage_tt.debug.xcconfig */,
+				78DAB5271523FB11981C6D4B /* Pods-mova_photoStorage_tt.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -168,13 +171,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79C6795C1F4321F70066D88C /* Build configuration list for PBXNativeTarget "mova_photoStorage_tt" */;
 			buildPhases = (
-				29CB2B8A1D3D74F788432D27 /* [CP] Check Pods Manifest.lock */,
+				704322AC025C12C698D4DA86 /* [CP] Check Pods Manifest.lock */,
 				79C679431F4321F50066D88C /* Sources */,
 				79C679441F4321F50066D88C /* Frameworks */,
 				79C679451F4321F50066D88C /* Resources */,
-				9F15573C55B2FB7C3CB670CA /* [CP] Embed Pods Frameworks */,
-				229C08A97F5CD783A328F0DA /* [CP] Copy Pods Resources */,
 				79C679771F44D24E0066D88C /* Embed Frameworks */,
+				50EEBAC1B5146F127FCD6AD4 /* [CP] Embed Pods Frameworks */,
+				A57B42A091CAC4E6593844B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,22 +239,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		229C08A97F5CD783A328F0DA /* [CP] Copy Pods Resources */ = {
+		50EEBAC1B5146F127FCD6AD4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		29CB2B8A1D3D74F788432D27 /* [CP] Check Pods Manifest.lock */ = {
+		704322AC025C12C698D4DA86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,26 +281,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F15573C55B2FB7C3CB670CA /* [CP] Embed Pods Frameworks */ = {
+		A57B42A091CAC4E6593844B3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mova_photoStorage_tt/Pods-mova_photoStorage_tt-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -303,6 +308,7 @@
 				79C6797A1F4574350066D88C /* ChooseFileVC.swift in Sources */,
 				79C679531F4321F70066D88C /* mova_photoStorage_tt.xcdatamodeld in Sources */,
 				79C6797D1F4575EB0066D88C /* CheckBox.swift in Sources */,
+				79C679831F457EDE0066D88C /* FileState.swift in Sources */,
 				79C679651F4322D70066D88C /* Cell0.swift in Sources */,
 				79C679671F4473D60066D88C /* CellModel.swift in Sources */,
 				79C6794B1F4321F60066D88C /* AppDelegate.swift in Sources */,
@@ -424,7 +430,7 @@
 		};
 		79C6795D1F4321F70066D88C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 173030AD265BDDC893E2413F /* Pods-mova_photoStorage_tt.debug.xcconfig */;
+			baseConfigurationReference = 060D4BCDE083B15EA6115B87 /* Pods-mova_photoStorage_tt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JPTEFF2RW3;
@@ -443,7 +449,7 @@
 		};
 		79C6795E1F4321F70066D88C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF00132EEA996FF860AC056F /* Pods-mova_photoStorage_tt.release.xcconfig */;
+			baseConfigurationReference = 78DAB5271523FB11981C6D4B /* Pods-mova_photoStorage_tt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JPTEFF2RW3;
